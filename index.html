@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TROL Alliance | Last War</title>
     <style>
-        body { background: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        /* CHANGED: Base text color updated to a clean medium-light grey */
+        body { background: #121212; color: #b0b0b0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
         
-        /* Optimized Hero Section to fit your new banner */
+        /* Optimized Hero Section to fit your banner */
         .hero { 
             text-align: center; 
             padding: 20px 10px; 
@@ -19,30 +20,59 @@
         .hero-img {
             max-width: 100%;
             height: auto;
-            max-height: 380px; /* Gives the detailed graphic plenty of room to shine */
+            max-height: 380px; 
             display: block;
             margin: 0 auto;
             border-radius: 6px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
         }
 
-        .hero p { color: #ffcc00; font-weight: bold; font-size: 1.3rem; margin-top: 20px; letter-spacing: 1px; }
+        /* CHANGED: Server text color set to a sharp light grey */
+        .hero p { color: #aaaaaa; font-weight: bold; font-size: 1.3rem; margin-top: 20px; letter-spacing: 1px; }
         .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+        
         .card { background: #1e1e1e; border-radius: 8px; padding: 25px; margin-bottom: 25px; border-left: 5px solid #ffcc00; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
-        h2 { color: #ffcc00; margin-top: 0; }
-        ul { padding-left: 20px; line-height: 1.6; }
+        
+        /* CHANGED: Card headers updated to light grey */
+        h2 { color: #aaaaaa; margin-top: 0; }
+        
+        /* CHANGED: List elements updated to matching grey */
+        ul { padding-left: 20px; line-height: 1.6; color: #b0b0b0; }
         li { margin-bottom: 10px; }
+        
+        /* CHANGED: Make strong/bold text labels pop in a brighter grey variant instead of yellow */
+        strong { color: #e0e0e0; }
+        
         .btn-container { text-align: center; margin-top: 20px; }
-        .btn-train { display: inline-block; background: #ffcc00; color: #121212; font-weight: bold; font-size: 1.2rem; text-decoration: none; padding: 15px 35px; border-radius: 5px; box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4); transition: transform 0.2s, background 0.2s; }
-        .btn-train:hover { background: #ffe066; transform: translateY(-2px); }
+        
+        /* Styles to support your image-based button */
+        .btn-image-link {
+            display: inline-block;
+            text-decoration: none;
+            transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+        }
+        
+        .btn-image {
+            max-width: 100%;
+            width: 280px; 
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Slight pop-out and brightness enhancement when hovered */
+        .btn-image-link:hover { 
+            transform: scale(1.04);
+            filter: brightness(1.1);
+        }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <!-- Your banner image linked exactly as requested -->
         <img src="trol1.jpg" alt="TROL ALLIANCE - Glory to the TROLs" class="hero-img">
-        <p>SERVER #887</p>
+        <p>SERVER #XXXX</p>
     </div>
 
     <div class="container">
@@ -51,8 +81,9 @@
             <h2>Alliance Train Sign-Up</h2>
             <p>Don't miss out on your daily rewards! R4s allocate Conductor and VIP passenger spots based on rotation requirements, daily contributions, and Duel VS performance. Ensure you sign up below to claim your spot on the track.</p>
             <div class="btn-container">
-                <!-- Replace 'YOUR_LINK_HERE' with your Google Sheet or Discord signup link -->
-                <a href="YOUR_LINK_HERE" target="_blank" class="btn-train">Sign Up for Train Rotation</a>
+                <a href="YOUR_LINK_HERE" target="_blank" class="btn-image-link">
+                    <img src="trol2.jpg" alt="Sign Up for Train Rotation" class="btn-train-img btn-image">
+                </a>
             </div>
         </div>
 
